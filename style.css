@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(234, 29%, 20%);
+}
+
+.container {
+    max-width: 800px;
+    background-color: #fff;
+    padding: 3em;
+    margin: 1em;
+    position: absolute;
+    top: 15em;
+    left: 270px;
+    border-radius: 1em;
+}
+
+section.product-summary {
+    display: flex;
+    padding-top: 21px;
+}
+
+section.even-columns {
+    display: flex;
+    padding-top: 21px;
+
+}
+
+section.carousel {
+    display: flex;
+    padding-top: 28px;
+
+}
+
+.heading p {
+    padding-top: 19px;
+}
+
+button.subscribe {
+    color: white;
+    background-color: hsl(234, 29%, 20%);
+    padding: 12px 4.7em 12px 4em;
+    border-radius: 0.5em;
+    font-size: 12px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+input[type="type"] {
+    padding: 12px 10.5em 12px 9px;
+    border-radius: 12px;
+    border: 1px solid gray;
+}
+
+h2 {
+    font-size: 12px;
+    margin-bottom: 12px;
+    margin-top: 49px;
+    color: hsl(234, 29%, 20%);
+}
+
+section.carousel p {
+    padding-left: 15px;
+}
+
+section.even-columns p {
+    padding-left: 15px;
+}
+
+section.product-summary p {
+    padding-left: 15px;
+}
+
+h1{
+    color: hsl(234, 29%, 20%);
+    font-size: 60px;
+}
+
+@media (max-width:767px) {
+    .container {
+        flex-direction: column-reverse;
+        width: 95%;
+        padding: 0;
+    }
+
+    .footer-img {
+        content: url(./assets/images/illustration-sign-up-mobile.svg);
+    }
+
+    .container h1 {
+        font-size: 30px;
+    }
+}
